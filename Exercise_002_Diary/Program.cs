@@ -30,12 +30,14 @@ namespace Exercise_002_Diary
 
         static void Main(string[] args)
         {
-            string mainPath = @"D:\Diary.txt";
+            Console.WriteLine("-- == Е Ж Е Д Н Е В Н И К == --");
+            Console.WriteLine();
+
+            Console.WriteLine("Укажите путь к файлу дневника, или новому файлу):");
+            string mainPath = Console.ReadLine();
 
             Diary diary = new Diary(mainPath);
 
-            Console.WriteLine("-- == Е Ж Е Д Н Е В Н И К == --");
-            Console.WriteLine();
             Console.WriteLine($"Фаил дневника:         {mainPath}");
             Console.WriteLine($"Записей в дневнике:    {diary.Count}");
             Console.WriteLine();
